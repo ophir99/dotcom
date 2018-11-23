@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <mat-toolbar-row>
+    <div class="fdr fg-1">
+      <div class="fg-1 ais fg-4">NextForce</div>
+      <ul class="fdr fg-4 jcs-a">
+        <li><button mat-button>Home</button></li>
+        <li><button mat-button>About us</button></li>
+        <li><button mat-button [matMenuTriggerFor]="menu">Services</button></li>
+        <li><button mat-button>Contact us</button></li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Product Development</button>
+  <button mat-menu-item>Tech Consultancy</button>
+  <button mat-menu-item>IT Recruitment</button>
+  <button mat-menu-item>Training</button>
+</mat-menu>
